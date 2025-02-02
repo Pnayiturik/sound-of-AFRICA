@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a4b6e; 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+
+.introduction {
+    background-image: url(./assets/images/MICS\ AND\ SONGS.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.introduction, .featured-artists, .latest-news, .genre-descriptions, .about-us {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Flexbox Layouts */
+.artist-container, .news-container, .genre-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    background-color: #1a4b6e; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.genre-container img {
+    width: 15%;
+    border-radius: 8px;
+}
+
+.genre img {
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.genre img:hover {
+    transform: scale(2.1);
+    -webkit-transform: scale(2.1);
+    -moz-transform: scale(2.1);
+    -ms-transform: scale(2.1);
+    -o-transform: scale(2.1);
+}
+
+.artist, .news-item, .genre {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid hsl(205, 49%, 18%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    background-color: hsl(205, 62%, 27%); 
+}
+
+.artist img {
+    width: 15%;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artist, .news-item, .genre {
+        flex: 1 1 100%;
+    }
+}
+
+/* Advanced CSS Techniques */
+nav a:hover {
+    text-decoration: none;
+    color: rgb(25, 23, 23);
+}
+
+.artist img {
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.artist img:hover {
+    transform: scale(1.1);
+}
+
+.news-item a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -moz-transition: background-color 0.3s ease, color 0.3s ease;
+    -ms-transition: background-color 0.3s ease, color 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.news-item a:hover {
+    background-color: #cabdbd;
+    color: black;
+    text-decoration: none;
+}
