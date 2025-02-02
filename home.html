@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Questrial&family=Syne+Tactile&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Sounds of Africa</h1>
         <nav>
             <ul>
@@ -18,17 +18,17 @@
                 <li><a href="#featured-artists">Artists</a></li>
                 <li><a href="#genre-descriptions">Genres</a></li>
                 <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact-us">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="introduction">
+    <section id="introduction" class="introduction">
         <h2>Welcome to Sounds of Africa</h2>
         <p>Your number one source for all things African music. We're dedicated to giving you the very best of African sounds, with a focus on diversity, quality, and uniqueness.</p>
     </section>
 
-    <section class="featured-artists">
+    <section id="featured-artists" class="featured-artists">
         <h2>Featured Artists</h2>
         <div class="artist-container">
             <div class="artist">
@@ -67,30 +67,61 @@
         </div>
     </section>
 
-    <section class="genre-descriptions">
+    <section id="genre-descriptions" class="genre-descriptions">
         <h2>Genres</h2>
         <div class="genre-container">
             <div class="genre">
-            <img src="./assets/images/which music genre are you_ ~ follow… (1).jpg" alt="Genre 1">
-            <h3>ROCK</h3>
-            <p>Rock music is characterized by a strong beat, simple chord progressions, and often revolves around the electric guitar. It originated in the 1950s and has since evolved into various subgenres.</p>
+                <img src="./assets/images/which music genre are you_ ~ follow… (1).jpg" alt="Genre 1">
+                <h3>ROCK</h3>
+                <p>Rock music is characterized by a strong beat, simple chord progressions, and often revolves around the electric guitar. It originated in the 1950s and has since evolved into various subgenres.</p>
             </div>
             <div class="genre">
-            <img src="./assets/images/which music genre are you_ ~ follow… (2).jpg" alt="Genre 2">
-            <h3>CLASSICAL</h3>
-            <p>Classical music is a broad term that usually refers to the formal musical tradition of the Western world, encompassing a variety of styles from the medieval period to the present day. It is known for its complex structures and orchestral arrangements.</p>
+                <img src="./assets/images/which music genre are you_ ~ follow… (2).jpg" alt="Genre 2">
+                <h3>CLASSICAL</h3>
+                <p>Classical music is a broad term that usually refers to the formal musical tradition of the Western world, encompassing a variety of styles from the medieval period to the present day. It is known for its complex structures and orchestral arrangements.</p>
             </div>
             <div class="genre">
-            <img src="./assets/images/which music genre are you_ ~ follow….jpg" alt="Genre 3">
-            <h3>COUNTRY MUSIC</h3>
-            <p>Country music originated in the southern United States in the 1920s. It often features ballads and dance tunes with simple forms, folk lyrics, and harmonies generally accompanied by instruments such as banjos, fiddles, harmonicas, and guitars.</p>
+                <img src="./assets/images/which music genre are you_ ~ follow….jpg" alt="Genre 3">
+                <h3>COUNTRY MUSIC</h3>
+                <p>Country music originated in the southern United States in the 1920s. It often features ballads and dance tunes with simple forms, folk lyrics, and harmonies generally accompanied by instruments such as banjos, fiddles, harmonicas, and guitars.</p>
             </div>
         </div>
     </section>
 
-    <section class="about-us">
+    <section id="about-us" class="about-us">
         <h2>About Us</h2>
         <p>Welcome to Sounds of Africa, your number one source for all things African music. We're dedicated to giving you the very best of African sounds, with a focus on diversity, quality, and uniqueness.</p>
+        <p>Follow us on social media to stay updated with the latest news and releases:</p>
+        <div class="social-media">
+            <a href="https://x.com/soundsofafrica" target="_blank">
+                <img src="./assets/icons/x.jpg" alt="X">
+            </a>
+            <a href="https://facebook.com/soundsofafrica" target="_blank">
+                <img src="./assets/icons/facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/soundsofafrica" target="_blank">
+                <img src="./assets/icons/instagram.jpg" alt="Instagram">
+            </a>
+        </div>
+        <p>Our Location:</p>
+        <p>123 Music Lane, kigali, Rwanda</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019284509676!2d-122.419415484681!3d37.77492927975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f0b0a0b1%3A0x4b0b0b0b0b0b0b0b!2sGreenCorner%20Bar!5e0!3m2!1sen!2sng!4v1600000000000!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to contact us:</p>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <footer>
